@@ -1,0 +1,8 @@
+const { test, expect } = require('@playwright/test');
+
+test('homepage loads', async ({ page }) => {
+  await page.goto('https://www.zara.com/us/en/search/home');
+  // Log the real title
+  console.log('Page title is:', await page.title());
+});
+
