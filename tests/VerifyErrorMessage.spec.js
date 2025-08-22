@@ -13,5 +13,5 @@ await page.getByPlaceholder("Password").fill("1234")
 await page.getByRole('button', { name: 'Login' }).click();
 const errorMessage = await expect(page.getByText('Invalid credentials')).toBeVisible();
 console.log("error message"+ errorMessage);
-expect(errorMessage==="Invalid credentials").toBeTruthy
+expect(errorMessage==="Invalid credentials").toBeTruthy()
 })
